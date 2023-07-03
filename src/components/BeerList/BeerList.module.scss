@@ -1,0 +1,16 @@
+.beers_container {
+  width: 70%;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-gap: 5rem;
+  justify-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .beers_container {
+    width: 90%;
+
+    grid-gap: 3rem;
+  }
+}

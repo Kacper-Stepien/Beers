@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3rem 0 8rem 0;
+  background: linear-gradient(
+    to right,
+    $color-secondary,
+    $color-secondary-light
+  );
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 53%, 0% 100%);
+
+  &_title {
+    color: $color-primary;
+    font-family: $font-heading;
+    font-size: 4rem;
+    letter-spacing: 5px;
+
+    &::first-letter {
+      font-size: 6rem;
+    }
+  }
+}

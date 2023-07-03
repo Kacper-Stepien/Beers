@@ -1,0 +1,36 @@
+@import "../../styles/variables.scss";
+
+.error {
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &_title {
+    margin-bottom: 2rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  &_message {
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+  }
+
+  &_link {
+    padding: 1rem 2rem;
+    border-radius: $border-radius-small;
+    background-color: $color-primary;
+    color: $color-gray-dark;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
